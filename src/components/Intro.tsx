@@ -5,14 +5,14 @@ import navMenu from "../assets/nav-menu.svg";
 function Intro() {
   const [toggleNav, setToggleNav] = useState(false);
   return (
-    <div className='grid md:grid-rows-[auto_1fr] h-[100dvh]'>
+    <div className="grid h-[100dvh] grid-rows-[auto_1fr]">
       {/* for larger devices */}
-      <nav className='hidden md:flex justify-between px-[40px] pt-[40px]'>
-        <div className='w-fit flex gap-10'>
+      <nav className="hidden justify-between px-[40px] pt-[40px] md:flex">
+        <div className="flex w-fit gap-10">
           <a>What we believe</a>
           <a>Our Features</a>
         </div>
-        <div className='w-fit flex gap-10'>
+        <div className="flex w-fit gap-10">
           <a>Our Story</a>
           <a>The waitlist</a>
         </div>
@@ -20,20 +20,24 @@ function Intro() {
 
       {/* For small devices */}
       {/* nav bar toggler */}
-      <div onClick={() => setToggleNav(true)} className='h-fit w-fit md:hidden'>
-        <img src={navMenu} alt='navMenu' className='block pt-5 px-5' />
+      <div onClick={() => setToggleNav(true)} className="h-fit w-fit md:hidden">
+        <img src={navMenu} alt="navMenu" className="block px-5 pt-5" />
       </div>
 
       {/* small devices nav bar  */}
       <nav
-        className={`fixed top-0 md:hidden h-full p-10 border-r ml-0 bg-black z-10 w-[300px] duration-300 transition-all  ${
+        className={`fixed top-0 z-10 ml-0 h-full w-[300px] border-r bg-black p-10 transition-all duration-300 md:hidden ${
           toggleNav ? "left-0" : "-left-[800px]"
         }`}
       >
         <div onClick={() => setToggleNav(false)}>
-          <img src={navMenu} alt='navMenu' className='float-end block' />
+          <img
+            src={navMenu}
+            alt="navMenu"
+            className="float-end block rotate-180"
+          />
         </div>
-        <div className=' flex flex-col gap-4 mt-10'>
+        <div className="mt-10 flex flex-col gap-4">
           <a>What we believe</a>
           <a>Our Features</a>
           <a>Our Story</a>
@@ -43,8 +47,8 @@ function Intro() {
       <div className={`flex items-center justify-center`}>
         <img
           src={logo}
-          alt='flui-logo'
-          className='w-[240px] h-[52px] mb-52 lg:w-[840px] lg:h-[180px]'
+          alt="flui-logo"
+          className="mb-32 h-[52px] w-[240px] lg:h-[180px] lg:w-[840px]"
         />
       </div>
     </div>

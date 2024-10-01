@@ -11,13 +11,13 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <main className="h-[100dvh]">
-      {/* <Intro /> */}
+      <Intro />
       {/* <Bright /> */}
-      {/* <Features /> */}
-      {/* <Carousel /> */}
+      <Features />
+      <Carousel />
       <AccordionSection />
       {/* <Form /> */}
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }

@@ -2,7 +2,7 @@ import AccordionItem from "./AccordionItem";
 
 function Accordion() {
   return (
-    <div className="space-y-10 lg:w-1/2 lg:space-y-7">
+    <div className="space-y-5 lg:w-1/2 lg:space-y-7">
       {accordionItems.map((item) => (
         <AccordionItem key={item} item={item} />
       ))}
