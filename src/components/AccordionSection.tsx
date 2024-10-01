@@ -2,9 +2,9 @@ import Accordion from "./Accordion";
 
 function AccordionSection() {
   return (
-    <div className="mt-20 flex flex-col justify-between px-[60px] xl:flex-row">
-      <div className="pb-10 xl:w-1/4 xl:pb-0">
-        <h1 className="text-[32px] leading-[40px] xl:text-[56px] xl:leading-[60px]">
+    <div className="mt-20 flex flex-col justify-between px-[60px] lg:flex-row">
+      <div className="xl:1/4 pb-10 lg:w-1/3 2xl:pb-0">
+        <h1 className="text-[40px] leading-[40px] xl:text-[56px] xl:leading-[60px]">
           What can curiosity, wonder, and awe do for you?
         </h1>
         <p className="pt-2 text-white/50 xl:pt-5">
