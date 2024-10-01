@@ -16,7 +16,7 @@ export default function App() {
       <Features />
       <Carousel />
       <AccordionSection />
-      {/* <Form /> */}
+      <Form />
       <Footer />
     </main>
   );
