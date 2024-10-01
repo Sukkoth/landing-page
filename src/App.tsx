@@ -4,7 +4,7 @@ import Features from "./components/Features";
 import Intro from "./components/Intro";
 import Bright from "./components/Bright";
 import Carousel from "./components/Carousel";
-import CarouselSection from "./components/CarouselSection";
+import AccordionSection from "./components/AccordionSection";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 
@@ -13,9 +13,9 @@ export default function App() {
     <main className="h-[100dvh]">
       {/* <Intro /> */}
       {/* <Bright /> */}
-      <Features />
+      {/* <Features /> */}
       {/* <Carousel /> */}
-      {/* <CarouselSection /> */}
+      <AccordionSection />
       {/* <Form /> */}
       {/* <Footer /> */}
     </main>
