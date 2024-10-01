@@ -1,5 +1,3 @@
-// images
-
 import Features from "./components/Features";
 import Intro from "./components/Intro";
 import Bright from "./components/Bright";

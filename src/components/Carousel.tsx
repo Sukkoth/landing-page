@@ -13,7 +13,7 @@ function Carousel() {
         <img
           src={frame1}
           alt="frame-1"
-          className="h-[700px] object-cover lg:object-none"
+          className="h-[700px] w-full object-cover"
         />
         {/* <img src={frame1} alt='frame-1' className='w-full' />
         <img src={frame1} alt='frame-1' className='w-full' />
