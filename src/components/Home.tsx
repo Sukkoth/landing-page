@@ -3,7 +3,6 @@ import logo from "../assets/fluid-icon.svg";
 import openNavIcon from "../assets/nav-menu.svg";
 import closeNavIcon from "../assets/closeNav.svg";
 
-import todo from "../assets/cards/todo.svg";
 import todo2 from "../assets/cards/todo2.svg";
 import tab from "../assets/cards/tab.svg";
 import card from "../assets/cards/card.svg";
@@ -11,7 +10,6 @@ import newTicket from "../assets/cards/new-ticket.svg";
 import tripIdeas from "../assets/cards/trip-ideas.svg";
 import bookFlight from "../assets/cards/book-flight.svg";
 import reservation from "../assets/cards/reservation.svg";
-import cafe from "../assets/cards/cafe.svg";
 import event from "../assets/cards/event.png";
 
 // import Intro from "./Intro";
