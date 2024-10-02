@@ -59,7 +59,11 @@ function Brigth() {
         />
       </div> */}
 
-      <img src={gradient} alt="gradient" className="w-full" />
+      <img
+        src={gradient}
+        alt="gradient"
+        className="h-[60rem] w-full object-cover lg:h-fit"
+      />
     </div>
   );
 }

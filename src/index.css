@@ -6,8 +6,10 @@
 
 @layer {
   body {
-    font-family: SF Pro Display, sans-serif;
-    @apply bg-black text-white relative;
+    font-family:
+      SF Pro Display,
+      sans-serif;
+    @apply relative bg-black text-white;
   }
 }
 
@@ -15,4 +17,8 @@ select option {
   background: #232323;
   color: #fff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.debug > * {
+  @apply border;
 }
