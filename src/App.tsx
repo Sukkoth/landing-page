@@ -2,9 +2,9 @@ import Features from "./components/Features";
 import Intro from "./components/Intro";
 import Bright from "./components/Bright";
 import Carousel from "./components/Carousel";
-import AccordionSection from "./components/AccordionSection";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
+import AccordionSection from "./components/AccordionSection";
 
 export default function App() {
   return (
