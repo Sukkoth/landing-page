@@ -10,15 +10,12 @@ export default function App() {
   return (
     <main className="h-[100dvh]">
       <Intro />
-      {/* <Bright /> */}
-      {/* <Schedule /> */}
-      {/* <HorizontalScrollCarousel /> */}
+      <Bright />
       <Features />
-      {/* 
       <Carousel />
       <AccordionSection />
       <Form />
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }
