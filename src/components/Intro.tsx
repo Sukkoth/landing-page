@@ -44,13 +44,6 @@ function Intro() {
           <a>The waitlist</a>
         </div>
       </nav>
-      <div className={`flex items-center justify-center`}>
-        <img
-          src={logo}
-          alt="flui-logo"
-          className="mb-32 h-[52px] w-[240px] lg:h-[180px] lg:w-[840px]"
-        />
-      </div>
     </div>
   );
 }

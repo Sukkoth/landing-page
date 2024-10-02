@@ -1,14 +1,14 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
+import PhoneDisplay from "./Phone";
 
-import phone1 from "../assets/images/phone-1.png";
-import phone2 from "../assets/images/phone-2.png";
-import phone3 from "../assets/images/phone-3.png";
+import video1 from "../assets/videos/video-1.mov";
+import video2 from "../assets/videos/video-2.mov";
+import video3 from "../assets/videos/video-3.mov";
 import phone4 from "../assets/images/phone-4.png";
-import Phone from "./Phone";
 
 function Features() {
-  const images = [phone1, phone2, phone3, phone4];
+  const embedDatas = [video1, video2, video3, phone4];
   const targetRef = useRef(null);
   const [display, setDisplay] = useState(0); //which image to display
 
@@ -29,16 +29,8 @@ function Features() {
       </div>
       <div ref={targetRef} className="mt-20 h-[300vh]">
         <div className="sticky top-0 h-screen space-y-10 overflow-hidden px-[20px] md:px-[30px] xl:space-y-20">
-          <div className="absolute left-[38%] top-24 hidden h-[446px] w-[220px] overflow-hidden rounded-[3rem] border-8 border-stone-700 lg:h-[783px] lg:w-[386px] xl:block">
-            <motion.img
-              key={display}
-              src={images[display]}
-              alt={`phone-${display + 1}`}
-              className="h-full w-full object-fill"
-              initial={{ opacity: 0.3 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-            />
+          <div className="absolute left-[38%] top-24 hidden lg:h-[783px] lg:w-[386px] xl:block">
+            <PhoneDisplay embedData={embedDatas[display]} key={display} large />
           </div>
           <motion.div style={{ y }}>
             {Array.from({ length: 4 }, (_, index) => (
@@ -65,7 +57,7 @@ function Features() {
                   </p>
                 </motion.div>
                 <div className="hidden flex-1 xl:block 2xl:flex-none"></div>
-                <Phone image={images[index]} />
+                <PhoneDisplay embedData={embedDatas[index]} />
                 <div className={`hidden w-[375px] xl:block`}></div>
               </motion.div>
             ))}

@@ -8,12 +8,13 @@ import tripIdeas from "../assets/cards/trip-ideas.svg";
 import bookFlight from "../assets/cards/book-flight.svg";
 import reservation from "../assets/cards/reservation.svg";
 import cafe from "../assets/cards/cafe.svg";
+import { motion } from "framer-motion";
 
 function Brigth() {
   return (
-    <div className="relative min-h-[100dvh]">
-      <img src={gradient} alt="gradient" className="sticky w-full" />
-      <div className="">
+    <div className="min-h-[100dvh]">
+      {/* <img src={gradient} alt="gradient" className="w-full" /> */}
+      {/* <div className="">
         <img src={todo} alt="todo" className="absolute top-[630px]" />
         <img
           src={tab}
@@ -56,13 +57,9 @@ function Brigth() {
           alt="reservation"
           className="absolute right-[270px] top-[920px]"
         />
-      </div>
-      <div className="absolute inset-x-1/3 top-1/3 w-[668px] text-center">
-        <h1 className="text-[80px]">Unlock Seamless Efficiency</h1>
-        <button className="h-[52px] w-[167px] rounded-[52px] bg-white text-black shadow-sm shadow-white">
-          Join Waitlist
-        </button>
-      </div>
+      </div> */}
+
+      <img src={gradient} alt="gradient" className="w-full" />
     </div>
   );
 }
