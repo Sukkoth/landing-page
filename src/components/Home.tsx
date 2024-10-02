@@ -129,28 +129,13 @@ function Home() {
         </div>
 
         <div className="">
-          {/* <motion.img
-            src={todo}
-            alt="todo"
-            className="absolute z-[999]"
-            style={{
-              top: useTransform(
-                scrollYProgress,
-                [0.3, 0.6],
-                ["430px", "430px"],
-              ),
-              left: useTransform(scrollYProgress, [0.3, 0.6], ["0px", "5px"]),
-              opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
-            }}
-          /> */}
-
           <motion.img
             id="cafe"
             src={tab}
-            alt="tab"
-            className="absolute z-[999]"
+            alt="cafe"
+            className="absolute z-[999] mt-5 w-[100px] md:mt-0 md:w-auto"
             style={{
-              left: useTransform(scrollYProgress, [0.3, 0.6], ["0px", "460px"]),
+              left: useTransform(scrollYProgress, [0.3, 0.6], ["0px", "30%"]),
               top: useTransform(
                 scrollYProgress,
                 [0.3, 0.6],
@@ -164,9 +149,25 @@ function Home() {
             id="clapDubai"
             src={card}
             alt="card"
-            className="absolute z-[999]"
+            className="absolute z-[999] hidden xl:block"
             style={{
               left: useTransform(scrollYProgress, [0.3, 0.6], ["0px", "197px"]),
+              top: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["130px", "130px"],
+              ),
+              opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
+            }}
+          />
+          {/* for small */}
+          <motion.img
+            id="clapDubai-small"
+            src={card}
+            alt="clapDubai"
+            className="absolute z-[999] block w-[150px] xl:hidden"
+            style={{
+              left: useTransform(scrollYProgress, [0.3, 0.6], ["0px", "10px"]),
               top: useTransform(
                 scrollYProgress,
                 [0.3, 0.6],
@@ -180,7 +181,7 @@ function Home() {
             id="renew-car-insurance"
             src={todo2}
             alt="todo-2"
-            className="absolute z-[999]"
+            className="absolute z-[999] hidden xl:block"
             style={{
               left: useTransform(
                 scrollYProgress,
@@ -195,11 +196,53 @@ function Home() {
               opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
             }}
           />
+
+          {/* on small */}
+          <motion.img
+            id="renew-car-insurance-small"
+            src={todo2}
+            alt="todo-2"
+            className="absolute z-[999] block w-[120px] md:w-[180px] xl:hidden"
+            style={{
+              left: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["-800px", "-20px"],
+              ),
+              top: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["460px", "460px"],
+              ),
+              opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
+            }}
+          />
+
           <motion.img
             id="event-left"
             src={event}
             alt="todo-2"
-            className="absolute z-[999]"
+            className="absolute z-[999] hidden xl:block"
+            style={{
+              left: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["-400px", "0px"],
+              ),
+              top: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["580px", "580px"],
+              ),
+              opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
+            }}
+          />
+          {/* small */}
+          <motion.img
+            id="event-left-small"
+            src={event}
+            alt="todo-2"
+            className="absolute z-[999] w-[150px] md:w-[200px] xl:hidden"
             style={{
               left: useTransform(
                 scrollYProgress,
@@ -219,7 +262,7 @@ function Home() {
             id="newTicket"
             src={newTicket}
             alt="new-ticket"
-            className="absolute z-[999]"
+            className="absolute z-[999] hidden xl:block"
             style={{
               left: useTransform(scrollYProgress, [0.3, 0.6], ["0", "174px"]),
               top: useTransform(
@@ -231,13 +274,46 @@ function Home() {
             }}
           />
 
+          {/* small */}
+          <motion.img
+            id="newTicket"
+            src={newTicket}
+            alt="new-ticket"
+            className="absolute z-[999] w-[200px] md:w-[400px] xl:hidden"
+            style={{
+              left: useTransform(scrollYProgress, [0.3, 0.6], ["0", "10px"]),
+              top: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["750px", "750px"],
+              ),
+              opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
+            }}
+          />
+
           <motion.img
             id="renew-car-insurance"
             src={todo2}
             alt="todo-2"
-            className="absolute z-[999]"
+            className="absolute z-[999] hidden xl:block"
             style={{
               right: useTransform(scrollYProgress, [0.3, 0.6], ["0", "340px"]),
+              top: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["142px", "142px"],
+              ),
+              opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
+            }}
+          />
+          {/* small */}
+          <motion.img
+            id="renew-car-insurance"
+            src={todo2}
+            alt="todo-2"
+            className="absolute z-[999] w-[150px] md:w-[220px] xl:hidden"
+            style={{
+              right: useTransform(scrollYProgress, [0.3, 0.6], ["0", "10px"]),
               top: useTransform(
                 scrollYProgress,
                 [0.3, 0.6],
@@ -251,9 +327,25 @@ function Home() {
             id="event-right"
             src={event}
             alt="todo-2"
-            className="absolute z-[999]"
+            className="absolute z-[999] hidden xl:block"
             style={{
               right: useTransform(scrollYProgress, [0.3, 0.6], ["0", "170px"]),
+              top: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["260px", "260px"],
+              ),
+              opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
+            }}
+          />
+          {/* small */}
+          <motion.img
+            id="event-right"
+            src={event}
+            alt="todo-2"
+            className="absolute z-[999] w-[150px] md:w-[200px] xl:hidden"
+            style={{
+              right: useTransform(scrollYProgress, [0.3, 0.6], ["0", "10px"]),
               top: useTransform(
                 scrollYProgress,
                 [0.3, 0.6],
@@ -267,7 +359,7 @@ function Home() {
             id="book-a-flight"
             src={bookFlight}
             alt="bookFlight"
-            className="absolute z-[999]"
+            className="absolute z-[999] hidden xl:block"
             style={{
               right: useTransform(scrollYProgress, [0.3, 0.6], ["0", "10px"]),
               top: useTransform(
@@ -278,12 +370,28 @@ function Home() {
               opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
             }}
           />
+          {/* small */}
+          <motion.img
+            id="book-a-flight"
+            src={bookFlight}
+            alt="bookFlight"
+            className="md:[150px] absolute z-[999] w-[100px] lg:w-auto xl:hidden"
+            style={{
+              right: useTransform(scrollYProgress, [0.3, 0.6], ["0", "10px"]),
+              top: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["560px", "560px"],
+              ),
+              opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
+            }}
+          />
 
           <motion.img
             id="trip-ideas"
             src={tripIdeas}
             alt="tripIdeas"
-            className="absolute z-[999]"
+            className="absolute z-[999] w-[100px] md:w-[150px] lg:w-auto"
             style={{
               right: useTransform(scrollYProgress, [0.3, 0.6], ["0px", "80px"]),
               top: useTransform(
@@ -298,9 +406,24 @@ function Home() {
           <motion.img
             src={reservation}
             alt="reservation"
-            className="absolute z-[999]"
+            className="absolute z-[999] hidden xl:block"
             style={{
               right: useTransform(scrollYProgress, [0.3, 0.6], ["0", "270px"]),
+              top: useTransform(
+                scrollYProgress,
+                [0.3, 0.6],
+                ["660px", "660px"],
+              ),
+              opacity: useTransform(scrollYProgress, [0.3, 0.6], [0, 1]),
+            }}
+          />
+
+          <motion.img
+            src={reservation}
+            alt="reservation"
+            className="absolute z-[999] w-[100px] md:w-[170px] lg:w-auto xl:hidden"
+            style={{
+              right: useTransform(scrollYProgress, [0.3, 0.6], ["0", "10px"]),
               top: useTransform(
                 scrollYProgress,
                 [0.3, 0.6],
