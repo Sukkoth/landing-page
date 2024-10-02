@@ -11,6 +11,7 @@ export default function App() {
     <main className="h-[100dvh]">
       <Intro />
       {/* <Bright /> */}
+      {/* <Schedule /> */}
       <Features />
       <Carousel />
       <AccordionSection />
