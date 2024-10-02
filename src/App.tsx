@@ -12,11 +12,13 @@ export default function App() {
       <Intro />
       {/* <Bright /> */}
       {/* <Schedule /> */}
+      {/* <HorizontalScrollCarousel /> */}
       <Features />
+      {/* 
       <Carousel />
       <AccordionSection />
       <Form />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }

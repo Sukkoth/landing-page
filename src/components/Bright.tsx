@@ -11,55 +11,55 @@ import cafe from "../assets/cards/cafe.svg";
 
 function Brigth() {
   return (
-    <div className='relative min-h-[100dvh]'>
-      <img src={gradient} alt='gradient' className='w-full sticky top-0' />
-      <div className=''>
-        <img src={todo} alt='todo' className='absolute top-[630px]' />
+    <div className="relative min-h-[100dvh]">
+      <img src={gradient} alt="gradient" className="sticky w-full" />
+      <div className="">
+        <img src={todo} alt="todo" className="absolute top-[630px]" />
         <img
           src={tab}
-          alt='tab'
-          className='left-[260px] top-[620px] absolute'
+          alt="tab"
+          className="absolute left-[260px] top-[620px]"
         />
         <img
           src={card}
-          alt='card'
-          className='left-[197px] top-[400px] absolute'
+          alt="card"
+          className="absolute left-[197px] top-[400px]"
         />
 
         <img
           src={cafe}
-          alt='cafe'
-          className='left-[260px] top-[875px] absolute'
+          alt="cafe"
+          className="absolute left-[260px] top-[875px]"
         />
         <img
           src={newTicket}
-          alt='new-ticket'
-          className='left-[174px] top-[1035px] absolute'
+          alt="new-ticket"
+          className="absolute left-[174px] top-[1035px]"
         />
         <img
           src={todo2}
-          alt='todo-2'
-          className='right-[240px] top-[342px] absolute'
+          alt="todo-2"
+          className="absolute right-[240px] top-[342px]"
         />
         <img
           src={bookFlight}
-          alt='bookFlight'
-          className='right-0 top-[756px] absolute'
+          alt="bookFlight"
+          className="absolute right-0 top-[756px]"
         />
         <img
           src={tripIdeas}
-          alt='tripIdeas'
-          className='right-[50px] top-[820px]  absolute'
+          alt="tripIdeas"
+          className="absolute right-[50px] top-[820px]"
         />
         <img
           src={reservation}
-          alt='reservation'
-          className='right-[270px] top-[920px] absolute'
+          alt="reservation"
+          className="absolute right-[270px] top-[920px]"
         />
       </div>
-      <div className='absolute top-1/3 w-[668px] text-center inset-x-1/3'>
-        <h1 className='text-[80px] '>Unlock Seamless Efficiency</h1>
-        <button className='w-[167px] h-[52px] bg-white text-black rounded-[52px] shadow-sm shadow-white'>
+      <div className="absolute inset-x-1/3 top-1/3 w-[668px] text-center">
+        <h1 className="text-[80px]">Unlock Seamless Efficiency</h1>
+        <button className="h-[52px] w-[167px] rounded-[52px] bg-white text-black shadow-sm shadow-white">
           Join Waitlist
         </button>
       </div>
