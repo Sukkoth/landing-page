@@ -1,4 +1,4 @@
-import frame1 from "../assets/images/frame-1.png";
+import HorizontalScrollCarousel from "./HorizontalScrollCarousel";
 
 function Carousel() {
   return (
@@ -9,16 +9,7 @@ function Carousel() {
           life
         </h1>
       </div>
-      <div className="mt-5 xl:mt-20">
-        <img
-          src={frame1}
-          alt="frame-1"
-          className="h-[700px] w-full object-cover"
-        />
-        {/* <img src={frame1} alt='frame-1' className='w-full' />
-        <img src={frame1} alt='frame-1' className='w-full' />
-        <img src={frame1} alt='frame-1' className='w-full' /> */}
-      </div>
+      <HorizontalScrollCarousel />
     </>
   );
 }
