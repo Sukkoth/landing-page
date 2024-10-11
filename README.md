@@ -1,3 +1,7 @@
+
+
+
+![Screenshot (266)](https://github.com/user-attachments/assets/d0a31208-0eb1-40ad-869f-7646bf24b7ac)
 # UI Challenge Project
 
 This project is a UI challenge implementation using React, TypeScript, Tailwind CSS, and Framer Motion. It focuses on creating a visually appealing and interactive landing page.
